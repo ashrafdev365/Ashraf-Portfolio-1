@@ -3,6 +3,9 @@ import "./projects.css";
 import { Nav, Footer } from "../Nav/Nav";
 import { Images } from "../Data/Data";
 const Projects = () => {
+  React.useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <>
       <Nav />

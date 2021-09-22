@@ -252,18 +252,20 @@
   .header_contant {
     width: 90%;
     text-align: center;
-    margin: 50px 0px 20px;
+    margin: 30px 0px 20px;
   }
   .header_contant h1 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
   }
   .header_contant h1 span {
-    font-size: 70px;
+    font-size: 50px;
     color: #5c33f6;
+    text-align: start;
   }
   .header_contant p {
-    width: 80%;
+    line-height: 26px;
+    width: 100%;
     font-weight: 500;
     font-size: 14px;
   }
@@ -304,20 +306,20 @@
   }
   .service_contant h1 {
     /* font-weight: 500; */
-    font-size: 40px;
+    font-size: 30px;
     /* border: 1px solid black; */
   }
   .service_contant h1 span {
     /* font-weight: bold; */
-    font-size: 35px;
+    font-size: 26px;
     /* letter-spacing: 0.02em;
     display: block;
     color: #5c33f6; */
   }
   .service_contant p {
-    /* line-height: 28px;
-    margin: 0px auto 50px; */
-    width: 70%;
+    line-height: 28px;
+    margin: 0px auto 40px;
+    width: 90%;
   }
 
   .service_main_div {
@@ -355,7 +357,7 @@
     margin: 15px 0px 5px;
   }
   .service_div h2 {
-    font-size: 22px;
+    font-size: 19px;
   }
   .service_div p {
     /* text-align: center;
@@ -408,19 +410,20 @@
   }
   .language_contant {
     width: 90%;
-    margin: 0px 0px 100px 0px;
+    margin: 0px 0px 50px 0px;
     text-align: center;
     /* border: 1px solid black; */
   }
   .language_contant h1 {
-    font-size: 40px;
+    font-size: 30px;
     /* border: 1px solid black; */
   }
   .language_contant h1 span {
-    font-size: 35px;
+    font-size: 26px;
   }
   .language_contant p {
-    width: 70%;
+    width: 90%;
+    margin: 10px auto 30px;
   }
 
   .language_image {
@@ -467,7 +470,7 @@
     /* padding: 15px; */
   }
   .email_div h3 {
-    margin: 20px 0px 50px;
+    margin: 20px 0px 30px;
     text-align: center;
   }
   .email {

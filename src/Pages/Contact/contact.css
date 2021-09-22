@@ -32,7 +32,8 @@
   border: none;
   margin: 20px 0px;
   outline: none;
-  box-shadow: 0px 0px 6px rgba(27, 26, 26, 0.397);
+  /* box-shadow: 0px 0px 6px rgba(27, 26, 26, 0.397); */
+  border: 1px solid rgba(0, 0, 0, 0.157);
 }
 .contect_section form textarea {
   width: 94%;
@@ -40,8 +41,9 @@
   padding: 20px;
   font-size: 16px;
   border-radius: 10px;
-  box-shadow: 0px 0px 6px rgba(27, 26, 26, 0.397);
-  border: none;
+  /* box-shadow: 0px 0px 6px rgba(27, 26, 26, 0.397); */
+  border: 1px solid rgba(0, 0, 0, 0.157);
+
   outline: none;
 }
 .contect_section form button {
@@ -51,4 +53,121 @@
   border-radius: 50px;
   background-color: #5c33f6;
   margin-top: 70px;
+}
+
+
+@media screen and (max-width: 850px) {
+
+  .contect_section h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  
+  .contect_section form {
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+  }
+
+
+}
+
+@media screen and (max-width: 750px) {
+  .contect_section {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0px;
+  }
+  .contect_section form input,
+  .contect_section form select,
+  .contect_section form select option {
+    width: 85%;
+    padding: 9px 25px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    margin: 10px 0px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.157);
+    background-color: white;
+  }
+  .contect_section form textarea {
+    width: 85%;
+    height: 200px;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+
+    border: 1px solid rgba(0, 0, 0, 0.157);
+    outline: none;
+  }
+  .contect_section form button {
+    font-size: 14px;
+    color: white;
+    padding: 7px 30px;
+    border-radius: 50px;
+    background-color: #5c33f6;
+    margin-top: 50px;
+  }
+  
+}
+
+
+@media screen and (max-width: 550px) {
+  .contect_section {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 80px;
+  }
+  .contect_section h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  
+  .contect_section form {
+    padding: 30px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+  }
+  .contect_section form input,
+  .contect_section form select,
+  .contect_section form select option {
+    width: 90%;
+    padding: 7px 25px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    margin: 10px 0px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.157);
+    background-color: white;
+  }
+  .contect_section form textarea {
+    width: 90%;
+    height: 200px;
+    padding: 15px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+
+    border: 1px solid rgba(0, 0, 0, 0.157);
+    outline: none;
+  }
 }

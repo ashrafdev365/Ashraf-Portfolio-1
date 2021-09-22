@@ -54,7 +54,9 @@ export const Nav = () => {
               <NavLink to="/">
                 <div>About Me</div>
               </NavLink>
-              <div className="nav_contact">Contact Us</div>
+              <NavLink to="/contact">
+                <div className="nav_contact">Contact Us</div>
+              </NavLink>
             </ul>
           </div>
           <NavLink to="/contact">
@@ -94,20 +96,40 @@ export const Footer = () => {
         </ul>
 
         <div className="social_icons">
-          <a href="" target="_blank">
-            <img src="assetes/Icons/fb.png" alt="icons" />
+          <a
+            href="https://www.facebook.com/ashrafdev.ashraf/"
+            target="_blank"
+            title="ashraf dev"
+          >
+            <img src="assetes/Icons/fb.png" alt="ashraf dev" />
           </a>
-          <a href="" target="_blank">
-            <img src="assetes/Icons/insta.png" alt="icons" />
+          <a
+            href="https://www.instagram.com/ashrafdev_365/"
+            target="_blank"
+            title="ashraf dev"
+          >
+            <img src="assetes/Icons/insta.png" alt="ashraf dev" />
           </a>
-          <a href="" target="_blank">
-            <img src="assetes/Icons/twitter.png" alt="icons" />
+          <a
+            href="https://twitter.com/Ashraf_365"
+            target="_blank"
+            title="ashraf dev"
+          >
+            <img src="assetes/Icons/twitter.png" alt="ashraf dev" />
           </a>
-          <a href="" target="_blank">
-            <img src="assetes/Icons/in.png" alt="icons" />
+          <a
+            href="https://www.linkedin.com/in/ashraf-dev-297301206/"
+            target="_blank"
+            title="ashraf dev"
+          >
+            <img src="assetes/Icons/in.png" alt="ashraf dev" />
           </a>
-          <a href="" target="_blank">
-            <img src="assetes/Icons/github.png" alt="icons" />
+          <a
+            href="https://github.com/ashrafdev365"
+            target="_blank"
+            title="ashraf dev"
+          >
+            <img src="assetes/Icons/github.png" alt="ashraf dev" />
           </a>
         </div>
       </footer>

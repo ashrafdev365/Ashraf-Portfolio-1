@@ -163,8 +163,9 @@ margin: 30px;
     box-shadow: 0px 0px 10px rgba(27, 25, 25, 0.47);
     border-radius: 27.5px;
     color: white;
-    padding: 8px 25px;
+    padding: 7px 25px;
     transition-duration: 0.6s;
+    font-size: 14px;
   }
   .home_pro_img{
     width: 80%;

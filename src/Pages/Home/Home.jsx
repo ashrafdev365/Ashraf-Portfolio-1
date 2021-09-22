@@ -11,6 +11,45 @@ import {
 } from "../Components/Components";
 
 const Home = () => {
+  //this is all for firebase real time data base
+  const [user, setuser] = React.useState({
+    email: "",
+  });
+  let name, value;
+  const getUserData = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+    setuser({ ...user, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    let { email } = user;
+
+    if (email) {
+      const res = await fetch(
+        "https://ashrafdev-ae6c3-default-rtdb.firebaseio.com/email.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+          }),
+        }
+      );
+      if (res) {
+        setuser({
+          email: "",
+        });
+        alert("Submit Email");
+      }
+    } else {
+      alert("Plzz Fill all the Data");
+    }
+  };
+
   return (
     <>
       <img src="assetes/Images/dots.png" alt="ashraf dev" className="dots" />
@@ -20,6 +59,7 @@ const Home = () => {
         className="dinond"
       />
       <Nav />
+      {/******************header section start**********************/}
       <header>
         <div className="header_contant">
           <h1>
@@ -47,7 +87,9 @@ const Home = () => {
           />
         </div>
       </header>
+      {/******************header section end**********************/}
 
+      {/******************service section start**********************/}
       <section className="service_section">
         <div className="service_contant">
           <h1>
@@ -67,7 +109,7 @@ const Home = () => {
             className="polygon"
             alt="ashraf dev"
           />
-
+          {/*********service box contant start***********/}
           <div className="service_div" id="web_design">
             <img src="assetes/Images/geom-13.png" alt="web design" />
             <h2>Web design</h2>
@@ -110,17 +152,20 @@ const Home = () => {
               <img src="assetes/Icons/right-arrow.png" alt="ashraf dev" />
             </button>
           </div>
+          {/*********service box contant emd***********/}
         </div>
       </section>
+      {/******************service section end**********************/}
 
+      {/******************Recent section start**********************/}
       <section className="recent_projects">
         <h1>Recent Works</h1>
         <div className="home_projects">
-          <HomeProjects img="project14.png" />
+          <HomeProjects img="project10.png" />
           <HomeProjects img="project11.png" />
           <HomeProjects img="project3.png" />
           <HomeProjects img="project12.png" />
-          <HomeProjects img="project6.png" />
+          <HomeProjects img="project14.png" />
           <HomeProjects img="project5.png" />
         </div>
         <Button name="View More" link="projects"></Button>
@@ -159,11 +204,13 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="proof_section">
+      {/******************Recent section end**********************/}
+      {/* <section className="proof_section">
         <h1>Social Proof</h1>
         <Proof />
-      </section>
+      </section> */}
 
+      {/******************email section start**********************/}
       <section className="email_section">
         <div className="email_div">
           <h3>Email</h3>
@@ -175,14 +222,21 @@ const Home = () => {
                 cupiditate dolor.
               </p>
             </div>
-            <span className="inputs">
-              <input type="email" name="email" placeholder="Email.." />
+            <form method="POST" onSubmit={handleSubmit} className="inputs">
+              <input
+                type="email"
+                onChange={getUserData}
+                value={user.email}
+                placeholder="Email..."
+                required
+                name="email"
+              />
               <button className="contact_btn">Submit</button>
-            </span>
+            </form>
           </div>
         </div>
       </section>
-
+      {/******************email section end**********************/}
       <Footer />
     </>
   );

@@ -2,10 +2,11 @@ import React, { useEffect } from "react";
 import "./service.css";
 import { Nav, Footer } from "../Nav/Nav";
 const Service = () => {
-  // useEffect(() => {
-  //   window(0, 0);
-  // }, []);
+  React.useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   const img = "assetes/Images/";
+
   return (
     <>
       <Nav />

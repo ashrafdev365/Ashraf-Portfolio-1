@@ -23,7 +23,7 @@ const Contact = () => {
 
     if (name && email && option && message && rool) {
       const res = await fetch(
-        "https://rafiahsan-cd071-default-rtdb.firebaseio.com/rafiContact.json",
+        "https://ashrafdev-ae6c3-default-rtdb.firebaseio.com/contact.json",
         {
           method: "POST",
           headers: {
@@ -52,6 +52,9 @@ const Contact = () => {
       alert("Plzz Fill all the Data");
     }
   };
+  React.useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <>
       <Nav />
@@ -101,7 +104,7 @@ const Contact = () => {
             <option value="Project Hire">Front End Dev</option>
             <option value="Job Hire">Bug fix</option>
           </select>
-
+{/* <br /> */}
           <textarea
             onChange={getUserData}
             name="message"
