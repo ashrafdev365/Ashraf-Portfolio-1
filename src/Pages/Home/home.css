@@ -1,0 +1,553 @@
+.dots{
+  position: absolute;
+  top: 670px;
+  left: 53%; 
+  width: 80px;
+}
+.dinond{
+  position: absolute;
+  top: 250px;
+  left: 380px;
+  width: 100px;
+}
+/***************************************** header Section start ****************************************************/
+header {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.header_contant {
+  width: 550px;
+}
+.header_contant h1 {
+  font-weight: bold;
+  font-size: 55px;
+}
+.header_contant h1 span {
+  font-size: 95px;
+  color: #5c33f6;
+}
+.header_contant p {
+  width: 450px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: -10px 0px 30px;
+}
+
+.hero_images {
+  position: relative;
+}
+.hero_back {
+  width: 550px;
+}
+.hero_img {
+  width: 400px;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  animation: hero ease-in-out 3s infinite;
+}
+@keyframes hero {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+/***************************************** header Section end ****************************************************/
+
+/***************************************** service Section start ****************************************************/
+.service_section {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service_contant {
+  width: 430px;
+  margin: -80px 0px 0px 0px;
+  /* border: 1px solid black; */
+}
+.service_contant h1 {
+  font-weight: 500;
+  font-size: 55px;
+  /* border: 1px solid black; */
+}
+.service_contant h1 span {
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: 0.02em;
+  display: block;
+  color: #5c33f6;
+}
+.service_contant p {
+  line-height: 28px;
+  margin: 0px 0px 50px;
+}
+
+.service_main_div {
+  position: relative;
+  /* border: 1px solid black; */
+  width: 650px;
+  height: 650px;
+}
+.polygon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#web_design {
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+#front_end {
+  bottom: 0px;
+  left: 0px;
+}
+#back_end {
+  bottom: 0px;
+  right: 0px;
+}
+
+.service_div {
+  width: 290px;
+  height: 280px;
+  background: #ffffff;
+  /* box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.39); */
+  box-shadow: 0px 0px 10px #5d33f675;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+}
+.service_div img {
+  width: 90px;
+  margin: 20px 0px 10px;
+}
+.back_end_img {
+  width: 60px !important;
+}
+.service_div h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.service_div p {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0px 20px;
+}
+.service_div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 0px auto;
+}
+.service_div button img {
+  width: 30px;
+  margin: 0px 0px 0px 10px;
+}
+/***************************************** service Section end ****************************************************/
+
+/***************************************** projects Section start ****************************************************/
+.recent_projects{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0px;
+}
+.recent_projects h1{
+  font-size: 55px;
+  font-weight: 500;
+}
+.home_projects{
+  width: 85vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px 0px;
+}
+/***************************************** projects Section end ****************************************************/
+
+/***************************************** language Section start ****************************************************/
+.language_section {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+.language_contant {
+  width: 480px;
+  margin: -80px 0px 0px 0px;
+  /* border: 1px solid black; */
+}
+.language_contant h1 {
+  font-weight: 500;
+  font-size: 55px;
+  /* border: 1px solid black; */
+}
+.language_contant h1 span {
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: 0.02em;
+  display: block;
+  color: #5c33f6;
+}
+.language_contant p {
+  line-height: 28px;
+  margin: 0px 0px 50px;
+}
+
+.language_image {
+  position: relative;
+  width: 500px;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+/***************************************** language Section end ****************************************************/
+
+/***************************************** proof Section start ****************************************************/
+.proof_section {
+  text-align: center;
+}
+.proof_section h1 {
+  font-size: 55px;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+/***************************************** proof Section end ****************************************************/
+
+/***************************************** email Section start ****************************************************/
+.email_section {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email_div {
+  background-color: white;
+  border-radius: 10px;
+  width: 1000px;
+  height: 300px;
+  padding: 15px;
+}
+.email_div h3 {
+  margin: 20px 50px 50px;
+}
+.email {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.email_contant {
+  width: 380px;
+  /* border: 1px solid black; */
+}
+.email_contant h1 {
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+}
+.email_contant p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+
+.inputs input {
+  font-size: 16px;
+  padding: 9px 15px;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 300px;
+  margin-right: 10px;
+  outline: none;
+}
+/***************************************** email Section staart ****************************************************/
+
+@media screen and (max-width: 1200px) {
+  .dots{
+    position: absolute;
+    top: 600px;
+    left: 45%; 
+    width: 80px;
+    z-index: -1;
+  }
+  .dinond{
+    position: absolute;
+    top: 220px;
+    left: 180px;
+    width: 80px;
+    z-index: -1;
+  }
+  /***************************************** header Section start ****************************************************/
+  header {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+  .header_contant {
+    width: 500px;
+  }
+  .header_contant h1 {
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .header_contant h1 span {
+    font-size: 85px;
+    color: #5c33f6;
+  }
+  .header_contant p {
+    width: 450px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: -10px 0px 30px;
+  }
+
+  .hero_images {
+    position: relative;
+  }
+  .hero_back {
+    width: 500px;
+  }
+  .hero_img {
+    width: 350px;
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    animation: hero ease-in-out 3s infinite;
+  }
+
+  /***************************************** header Section end ****************************************************/
+
+  /***************************************** service Section start ****************************************************/
+  .service_section {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .service_contant {
+    width: 430px;
+    margin: -80px 0px 0px 0px;
+    /* border: 1px solid black; */
+  }
+  .service_contant h1 {
+    font-weight: 500;
+    font-size: 50px;
+    /* border: 1px solid black; */
+  }
+  .service_contant h1 span {
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 0.02em;
+    display: block;
+    color: #5c33f6;
+  }
+  .service_contant p {
+    line-height: 28px;
+    margin: 0px 0px 50px;
+  }
+
+  .service_main_div {
+    position: relative;
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 600px;
+  }
+  .polygon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #web_design {
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+  #front_end {
+    bottom: 0px;
+    left: 0px;
+  }
+  #back_end {
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .service_div {
+    width: 270px;
+    height: 280px;
+    background: #ffffff;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+  }
+  .service_div img {
+    width: 90px;
+    margin: 15px 0px 5px;
+  }
+  .back_end_img {
+    width: 60px !important;
+  }
+  .service_div h2 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .service_div p {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0px 20px;
+  }
+  .service_div button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0px auto;
+    font-size: 14px;
+  }
+  .service_div button img {
+    width: 30px;
+    margin: 0px 0px 0px 10px;
+  }
+  /***************************************** service Section end ****************************************************/
+
+  /***************************************** projects Section start ****************************************************/
+  .recent_projects {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .recent_projects h1 {
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 20px 0px 30px;
+  }
+  /***************************************** projects Section end ****************************************************/
+
+  /***************************************** language Section start ****************************************************/
+  .language_section {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .language_contant {
+    width: 480px;
+    margin: -80px 0px 0px 0px;
+    /* border: 1px solid black; */
+  }
+  .language_contant h1 {
+    font-weight: 500;
+    font-size: 50px;
+    /* border: 1px solid black; */
+  }
+  .language_contant h1 span {
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 0.02em;
+    display: block;
+    color: #5c33f6;
+  }
+  .language_contant p {
+    line-height: 28px;
+    margin: 0px 0px 50px;
+  }
+
+  .language_image {
+    position: relative;
+    width: 500px;
+    /* border: 1px solid black; */
+    text-align: center;
+  }
+  /***************************************** language Section end ****************************************************/
+
+  /***************************************** proof Section start ****************************************************/
+  .proof_section {
+    text-align: center;
+  }
+  .proof_section h1 {
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 80px;
+  }
+  /***************************************** proof Section end ****************************************************/
+
+  /***************************************** email Section start ****************************************************/
+  .email_section {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .email_div {
+    background-color: white;
+    border-radius: 10px;
+    width: 1000px;
+    height: 300px;
+    padding: 15px;
+  }
+  .email_div h3 {
+    margin: 20px 50px 50px;
+  }
+  .email {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .email_contant {
+    width: 380px;
+    /* border: 1px solid black; */
+  }
+  .email_contant h1 {
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+  }
+  .email_contant p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+  }
+
+  .inputs input {
+    font-size: 16px;
+    padding: 9px 15px;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 300px;
+    margin-right: 10px;
+    outline: none;
+  }
+  /***************************************** email Section staart ****************************************************/
+}
